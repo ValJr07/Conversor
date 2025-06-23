@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conversor de Moedas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 400px;
+      margin: 30px auto;
+      padding: 15px;
+      background: #f0f0f0;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    label, input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+    input {
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .result {
+      background-color: white;
+      padding: 15px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Conversor de Moedas</h1>
+
+  <label for="real">Valor em Real (R$):</label>
+  <input type="number" id="real" placeholder="Digite o valor em R$" min="0" step="0.01" onkeydown="mostrar()"/>
+  
+  <div id="bitcoin" class="resultB">Bitcoin: --</div>
+  <div id="euro" class="resultE">Euro: --</div>
+  <div id="dolar" class="resultD">Dólar: --</div>
+
+</body>
+</html>
